@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(tvOS 13.0, *)
 public extension Binding {
     func onChange(_ handler: @escaping (Value) -> Void) -> Binding<Value> {
         return Binding (
