@@ -28,6 +28,11 @@ public extension Optional where Wrapped == String {
         return Double(strD)
     }
     
+    var toInt: Int? {
+        guard let strD = self else { return nil }
+        return Int(strD)
+    }
+    
 }
 
 // MARK: - 🔅 Double Optional
@@ -39,3 +44,11 @@ public extension Optional where Wrapped == Double {
     }
     
 }
+
+// MARK: - 🔅 Double Optional
+public extension Optional where Wrapped == Int {
+    
+    
+    
+}
+
