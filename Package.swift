@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "CIFoundation",
     platforms: [.iOS(.v13),
-                .macOS(.v10_15)],
+                .macOS(.v10_15),
+                ],
     products: [.library(name: "CIFoundation", targets: ["CIFoundation"])],
     dependencies: [],
     targets: [
