@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DateFormat: String {
+public enum DateFormat: String {
     case MMM_dd = "MMM dd"
     case MMM_dd_YYYY = "MMM dd YYYY"
     case ReserveCentsStandard = "MMM dd, YYYY"
@@ -22,4 +22,5 @@ enum DateFormat: String {
     case notamCreated = "dd MMM HH:mm yyyy"
     case notam = "ddMMMHH:mmyyyy" //16JUL07:392019
     case dateOfEntry = "MMM dd, yyyy"
+    case statusBoard = "dd MMM yyyy HH:mm"
 }
