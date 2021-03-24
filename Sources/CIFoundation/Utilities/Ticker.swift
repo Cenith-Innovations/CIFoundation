@@ -13,8 +13,11 @@ public class Ticker: ObservableObject {
     
     public static var shared = Ticker()
     
-    @Published public var refresh = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    @Published public var refresh = Timer.publish(every: 600, on: .main, in: .common).autoconnect()
     @Published public var clock = Timer.publish(every: 1/60, on: .main, in: .common).autoconnect()
+    @Published public var scroll = Timer.publish(every: 1/3, on: .main, in: .common).autoconnect()
+    @Published public var notamRefresh = Timer.publish(every: 3600, on: .main, in: .common).autoconnect()
+    
     
 }
 

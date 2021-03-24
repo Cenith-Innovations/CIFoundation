@@ -36,3 +36,14 @@ public extension Date {
     
     
 }
+
+public extension Optional where Wrapped == Date {
+    
+    func dateToString(ofFormat: DateFormat) -> String {
+        guard let date = self else { return "UNK" }
+        let df = DateFormatter()
+        df.dateFormat = ofFormat.rawValue
+        return df.string(from: date)
+    }
+    
+}
