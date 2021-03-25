@@ -67,3 +67,12 @@ public extension Double {
     }
     
 }
+
+public extension Optional where Wrapped == Double {
+    
+    func toStringWithDec(_ num: Int) -> String {
+        guard let selfD = self else { return "UNK" }
+        return "\(String(format: "%.\(num)f",selfD))"
+    }
+    
+}
