@@ -23,5 +23,6 @@ public enum DateFormat: String {
     case notam = "ddMMMHH:mmyyyy" //16JUL07:392019
     case dateOfEntry = "MMM dd, yyyy"
     case statusBoard = "dd.MM.yy-HH:mm'Z'"
+    case statusBoardTime = "HH:mm"
     case foracastString = "dd.HHmm'Z'"
 }
