@@ -33,7 +33,8 @@ public extension Double {
     }
     
     func toStringWithDec(_ num: Int) -> String {
-        "\(String(format: "%.\(num)f",self))"
+        guard self != 99999 else { return "?" }
+        return "\(String(format: "%.\(num)f",self))"
     }
     
     func toStringWithNumberOfDecimal(_ num: Int) -> String {
@@ -71,7 +72,8 @@ public extension Double {
 public extension Optional where Wrapped == Double {
     
     func toStringWithDec(_ num: Int) -> String {
-        guard let selfD = self else { return "UNK" }
+        guard let selfD = self else { return "?" }
+        guard selfD != 99999 else { return "?"}
         return "\(String(format: "%.\(num)f",selfD))"
     }
     

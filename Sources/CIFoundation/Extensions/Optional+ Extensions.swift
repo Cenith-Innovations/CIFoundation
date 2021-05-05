@@ -12,7 +12,7 @@ import Foundation
 public extension Optional where Wrapped == String {
     
     var uw: String {
-        guard let result = self else { return "UNK" }
+        guard let result = self else { return "?" }
         return result
     }
     
@@ -39,7 +39,7 @@ public extension Optional where Wrapped == String {
 public extension Optional where Wrapped == Double {
     
     func uw(_ dec: Int)  -> String {
-        guard let selfD = self else { return "UNK" }
+        guard let selfD = self else { return "?" }
         return selfD.toStringWithDec(dec)
     }
     
