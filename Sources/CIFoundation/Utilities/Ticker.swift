@@ -18,7 +18,7 @@ public class Ticker: ObservableObject {
     @Published public var scroll = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     @Published public var runwayScroll = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     @Published public var notamRefresh = Timer.publish(every: 120, on: .main, in: .common).autoconnect()
-    @Published public var weatherRefresh = Timer.publish(every: 120, on: .main, in: .common).autoconnect()
+    @Published public var weatherRefresh = Timer.publish(every: 600, on: .main, in: .common).autoconnect()
     @Published public var birdConRefresh = Timer.publish(every: 120, on: .main, in: .common).autoconnect()
     
 }
